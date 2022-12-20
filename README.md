@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Demo of Password and Calendar component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Demo of Password and Calendar component
 
 ## Available Scripts
 
