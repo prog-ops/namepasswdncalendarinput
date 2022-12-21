@@ -65,7 +65,8 @@ export const popperSxProps: SxProps = {
     },
     "& .css-31ca4x-MuiPickersFadeTransitionGroup-root": {
         display: "flex",
-        position: "absolute",
+        position: "fixed",
+        // position: "absolute",
         paddingLeft: "80px"
     },
     "& .css-9reuh9-MuiPickersArrowSwitcher-root": {
