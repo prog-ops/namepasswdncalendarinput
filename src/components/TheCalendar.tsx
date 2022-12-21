@@ -1,5 +1,6 @@
 import * as React from "react";
-import {AdapterDayjs} from '@mui/x-date-pickers/AdapterDayjs';
+// import {AdapterDayjs} from '@mui/x-date-pickers/AdapterDayjs';//v before
+import AdapterDayjs from '@date-io/dayjs';
 import {LocalizationProvider} from "@mui/x-date-pickers/LocalizationProvider";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
