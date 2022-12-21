@@ -4,7 +4,7 @@ import {LocalizationProvider} from "@mui/x-date-pickers/LocalizationProvider";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import {Box, Button, colors} from "@mui/material";
+import {Box, Button, colors, Typography} from "@mui/material";
 import {DatePicker} from "@mui/x-date-pickers/DatePicker";
 import {popperSxProps} from "../styles/popperSxProps";
 import {CustomActionBar} from "./CustomActionBar";
@@ -23,14 +23,14 @@ export default function TheCalendar() {
 
     const customToolbar = (props: BaseToolbarProps<Date, Date | null>) => {
         return (
-            <div style={{
+            <Box style={{
                 marginTop: 20,
                 marginLeft: '30px',
                 justifyContent: 'space-around'
             }}>
-                <text>Text</text>
+                <Typography>Text</Typography>
                 <DatePickerToolbar {...props} />
-            </div>
+            </Box>
         )
     }
 
