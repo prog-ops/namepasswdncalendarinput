@@ -13,8 +13,7 @@ export const CustomActionBar = (
         <DialogActions
             sx={{
                 padding: 0,
-                backgroundColor: "yellow",
-                // backgroundColor: "#1B1B1B",
+                backgroundColor: "#1B1B1B",
             }}>
             <Button onClick={onCancel} sx={{
                 textTransform: 'none',
