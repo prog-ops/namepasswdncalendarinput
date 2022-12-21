@@ -30,8 +30,8 @@ export const popperSxProps: SxProps = {
     "& .MuiCalendarPicker-root": {
         backgroundColor: "#1B1B1B",
     },
-    "& .MuiYearPicker-root": {
-    },
+    // "& .MuiYearPicker-root": {
+    // },
     "& .PrivatePickersSlideTransition-root": {
         minHeight: '200px'
     },
