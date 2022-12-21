@@ -71,6 +71,7 @@ export default function TheCalendar() {
                                 label: {color: colors.common.white},
                             }}
                             onClick={(e: React.MouseEvent<HTMLDivElement>) => setOpen(true)}
+                            InputLabelProps={{shrink:true}}
                         />
                     }
                 />
