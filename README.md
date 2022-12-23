@@ -1,7 +1,5 @@
 # Demo of Password and Calendar component
 
-Demo of Password and Calendar component
-
 ### Material UI Calendar (datepicker)
 
 Note: year picker doesn't appear as locally after hosted on github pages
