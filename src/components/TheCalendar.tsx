@@ -13,6 +13,7 @@ import {DatePickerToolbar} from "@mui/x-date-pickers/DatePicker/DatePickerToolba
 import {BaseToolbarProps} from "@mui/x-date-pickers/internals";
 import {useState} from "react";
 import {StyledDateTextField} from "./StyledDateTextField";
+import {CustomToolbar} from "./CustomToolbar";
 
 export default function TheCalendar() {
     const [value, setValue] = React.useState<Date | null>(new Date());
@@ -21,19 +22,6 @@ export default function TheCalendar() {
     const handleChange = (newValue: Date | null) => {
         setValue(newValue);
     };
-
-    const customToolbar = (props: BaseToolbarProps<Date, Date | null>) => {
-        return (
-            <Box style={{
-                marginTop: 20,
-                marginLeft: '30px',
-                justifyContent: 'space-around'
-            }}>
-                <Typography>Text</Typography>
-                <DatePickerToolbar {...props} />
-            </Box>
-        )
-    }
 
     return (
         // <>
@@ -44,7 +32,7 @@ export default function TheCalendar() {
                     onOpen={() => setOpen(true)}
                     onClose={() => setOpen(false)}
 
-                    ToolbarComponent={customToolbar}
+                    ToolbarComponent={CustomToolbar}
                     toolbarFormat='MMM, YYYY'
                     showToolbar={true}
                     showDaysOutsideCurrentMonth={true}
