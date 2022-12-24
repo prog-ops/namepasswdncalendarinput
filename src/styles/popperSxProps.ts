@@ -92,14 +92,12 @@ export const popperSxProps: SxProps = {
         borderColor: 'primary.light',
 
     },
-    "& .MuiPickersDay-root": {
-        "&.Mui-selected": {
-            backgroundColor: 'primary.light',
-        },
-    },
     "& .MuiPickersDay-dayWithMargin": {
         color: colors.common.white,
         backgroundColor: "#1B1B1B",
+        "&.Mui-selected": {
+            backgroundColor: 'primary.light',
+        },
     },
     "& .MuiPickersDay-dayWithMargin:hover": {
         color: colors.common.black,
@@ -118,16 +116,24 @@ export const popperSxProps: SxProps = {
     //| inside MuiYearPicker-root
     "& .PrivatePickersYear-yearButton":{
         borderRadius: '2px',
-        height: '28px'
+        height: '28px',
+        m: '16px 0 16px 0',
+        "& .Mui-selected": {
+            bgcolor: 'primary.light',
+        },
     },
     "& .Mui-selected .PrivatePickersYear-yearButton":{
         borderRadius: '2px',
+        bgcolor: 'primary.light',
         height: '28px'
     },
     "& .PrivatePickersYear-yearButton:hover":{
         color: colors.common.black,
         backgroundColor: colors.common.white,
         borderRadius: '0px',
+    },
+    "& .Mui-selected.css-3eghsz-PrivatePickersYear-button":{
+        bgcolor: 'primary.light',
     },
 
 

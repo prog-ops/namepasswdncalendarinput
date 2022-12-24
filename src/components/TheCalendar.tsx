@@ -63,6 +63,15 @@ export default function TheCalendar() {
                     disableOpenPicker
                     InputProps={{
                     }}
+                    PaperProps={{
+                        sx: {
+                            "& .MuiPickersDay-root": {
+                                "&.Mui-selected": {
+                                    backgroundColor: 'primary.light',
+                                },
+                            },
+                        }
+                    }}
                     PopperProps={{sx: popperSxProps}}
                     renderInput={(params) =>
                         <StyledDateTextField
