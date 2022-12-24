@@ -25,7 +25,7 @@ export const PasswordValidation = (
                 sx={{
                     alignItems: 'flex-start',
                     bgcolor: '#242424',
-                    p: '8px 8px',
+                    p: '10px 8px',
                     m: '10px 0 0 0',
                     borderRadius: '8px',
                     borderColor: 'warning',
