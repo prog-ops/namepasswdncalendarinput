@@ -86,7 +86,6 @@ export const popperSxProps: SxProps = {
     },
 
 
-    //- button ok and button cancel
     "& .MuiButtonBase-root.MuiPickersDay-today": {
         color: colors.common.white,
         border: '1.4px solid',
