@@ -1,12 +1,9 @@
 import React, {FC} from 'react';
 import './App.css';
-import ThePasswordInput from "./components/ThePasswordInput";
+import ThePasswordInput from "./screens/ThePasswordInput";
 import {colors, createTheme, experimental_sx, Stack, ThemeProvider} from "@mui/material";
 // import {experimental_sx as sx} from "@mui/material/styles";
-import TheCalendar from "./components/TheCalendar";
-
-const style = {
-}
+import TheCalendar from "./screens/TheCalendar";
 
 const myTheme = createTheme({
     typography: {
@@ -24,8 +21,7 @@ const myTheme = createTheme({
     },
     components: {
         MuiTextField: {
-            styleOverrides: {
-            }
+            styleOverrides: {}
         }
     },
 })

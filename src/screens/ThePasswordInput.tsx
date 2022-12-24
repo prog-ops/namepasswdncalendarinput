@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Box, Paper, TextField} from "@mui/material";
-import ValidationComponent from "./ValidationComponent";
-import {StyledPasswordTextField} from "./StyledPasswordTextField";
+import ValidationComponent from "../components/ValidationComponent";
+import {StyledPasswordTextField} from "../components/StyledPasswordTextField";
 
 interface PasswordProps {
     lowerLetterFlag: boolean

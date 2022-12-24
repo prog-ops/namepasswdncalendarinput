@@ -8,12 +8,12 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import {Box, Button, colors, Typography} from "@mui/material";
 import {DatePicker} from "@mui/x-date-pickers/DatePicker";
 import {popperSxProps} from "../styles/popperSxProps";
-import {CustomActionBar} from "./CustomActionBar";
+import {CustomActionBar} from "../components/CustomActionBar";
 import {DatePickerToolbar} from "@mui/x-date-pickers/DatePicker/DatePickerToolbar";
 import {BaseToolbarProps} from "@mui/x-date-pickers/internals";
 import {useState} from "react";
-import {StyledDateTextField} from "./StyledDateTextField";
-import {CustomToolbar} from "./CustomToolbar";
+import {StyledDateTextField} from "../components/StyledDateTextField";
+import {CustomToolbar} from "../components/CustomToolbar";
 
 export default function TheCalendar() {
     const [value, setValue] = React.useState<Date | null>(new Date());
