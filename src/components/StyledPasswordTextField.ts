@@ -16,7 +16,7 @@ export const StyledPasswordTextField = styled(TextField)({
     },
     "& .MuiOutlinedInput-root.Mui-focused": {
         "& > fieldset": {
-            borderColor: "primary.main",
+            borderColor: "primary.light",
             borderWidth: '3px',
             borderRadius: '8px'
         }
@@ -32,7 +32,7 @@ export const StyledPasswordTextField = styled(TextField)({
         color: colors.common.white
     },
     '& label.Mui-focused': {
-        color: 'primary.main',
+        color: 'primary.light',
         borderWidth: '3px',
     },
 });
