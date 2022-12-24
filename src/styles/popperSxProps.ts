@@ -5,7 +5,7 @@ export const popperSxProps: SxProps = {
     width: 320,
     "& .MuiPaper-root": {
         boxShadow: '4px 4px 20px rgba(0, 0, 0, 0.3)',
-        marginTop: 1,
+        marginTop: 2,
         backgroundColor: "#1B1B1B",
         borderRadius: "10px",
         height: 435,
