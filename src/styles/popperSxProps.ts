@@ -117,18 +117,17 @@ export const popperSxProps: SxProps = {
 
     //| inside MuiYearPicker-root
     "& .PrivatePickersYear-yearButton":{
-        borderRadius: '0px',
+        borderRadius: '2px',
+        height: '28px'
+    },
+    "& .Mui-selected .PrivatePickersYear-yearButton":{
+        borderRadius: '2px',
+        height: '28px'
     },
     "& .PrivatePickersYear-yearButton:hover":{
         color: colors.common.black,
         backgroundColor: colors.common.white,
-    },
-    "& .css-3eghsz-PrivatePickersYear-button":{
-        height: '28px'
-    },
-    "& .Mui-selected.css-3eghsz-PrivatePickersYear-button":{
-        height: '28px',
-        borderRadius: '2px',
+        borderRadius: '0px',
     },
 
 
