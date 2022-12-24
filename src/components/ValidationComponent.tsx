@@ -22,7 +22,6 @@ export default function ValidationComponent({text, flag}: Props){
             <Typography sx={{
                 marginLeft: '8px',
                 fontSize: '14px',
-                fontFamily: "sans-serif",
                 fontWeight: '400',
             }}>{text}</Typography>
         </Stack>

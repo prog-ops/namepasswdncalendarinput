@@ -3,7 +3,7 @@ import {Box, Paper, TextField} from "@mui/material";
 import ValidationComponent from "./ValidationComponent";
 import {StyledPasswordTextField} from "./StyledPasswordTextField";
 
-interface PWDProps {
+interface PasswordProps {
     lowerLetterFlag: boolean
     capsLetterFlag: boolean
     numberingFlag: boolean
@@ -11,25 +11,27 @@ interface PWDProps {
     specialCharFlag: boolean
 }
 
-export const PWDRequisite = (
+export const PasswordValidation = (
     {
         lowerLetterFlag,
         capsLetterFlag,
         numberingFlag,
         pwdLengthFlag,
         specialCharFlag
-    }: PWDProps) => {
+    }: PasswordProps) => {
     return (
         <Box>
             <Box
                 sx={{
+                    alignItems: 'flex-start',
                     bgcolor: '#242424',
-                    p: '12px 12px',
-                    m: '10px',
+                    p: '8px 8px',
+                    m: '10px 0 0 0',
                     borderRadius: '8px',
                     borderColor: 'warning',
                     borderWidth: '2px',
-                    width: '290px',
+                    position: 'relative',
+                    width: '318px',
                     boxShadow: '4px 4px 20px rgba(0, 0, 0, 0.3)',
                 }}>
                 <ValidationComponent flag={lowerLetterFlag}
@@ -83,40 +85,38 @@ export default function ThePasswordInput() {
         })
     }
 
-    return (<Box>
-        <Paper sx={{backgroundColor: '#181818', p: 4, m: 4}} elevation={4}>
-            <Box>
-                <StyledPasswordTextField
-                    inputProps={{
-                        sx: {
-                            "&::placeholder": {
-                                color: "rgba(250, 250, 250)"
-                            }
+    return (<Box sx={{backgroundColor: '#181818', p: 4, m: 4}}>
+        <Box>
+            <StyledPasswordTextField
+                inputProps={{
+                    sx: {
+                        "&::placeholder": {
+                            color: "rgba(250, 250, 250)"
                         }
-                    }}
-                    InputLabelProps={{shrink:true}}
-                    sx={{width:'335px', borderColor:'white'}}
-                    label='Password'
-                    placeholder='Password'
-                    id='password'
-                    type='password'
-                    value={password}
-                    onChange={handleChange}
-                    onFocus={handleFocus}
-                    onBlur={handleBlur}
-                    onKeyUp={handleKeyUp}/>
-            </Box>
-            {
-                pwdreq ? (
-                    <PWDRequisite
-                        lowerLetterFlag={checks.lowerLetterCheck}
-                        capsLetterFlag={checks.capsLetterCheck}
-                        numberingFlag={checks.numberingCheck}
-                        pwdLengthFlag={checks.pwdLengthCheck}
-                        specialCharFlag={checks.specialCharCheck}
-                    />
-                ) : null
-            }
-        </Paper>
+                    }
+                }}
+                InputLabelProps={{shrink: true}}
+                sx={{width: '335px', borderColor: 'white'}}
+                label='Password'
+                placeholder='Password'
+                id='password'
+                type='password'
+                value={password}
+                onChange={handleChange}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
+                onKeyUp={handleKeyUp}/>
+        </Box>
+        {
+            pwdreq ? (
+                <PasswordValidation
+                    lowerLetterFlag={checks.lowerLetterCheck}
+                    capsLetterFlag={checks.capsLetterCheck}
+                    numberingFlag={checks.numberingCheck}
+                    pwdLengthFlag={checks.pwdLengthCheck}
+                    specialCharFlag={checks.specialCharCheck}
+                />
+            ) : null
+        }
     </Box>)
 }

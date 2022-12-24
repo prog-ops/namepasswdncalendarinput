@@ -9,6 +9,13 @@ const style = {
 }
 
 const myTheme = createTheme({
+    typography: {
+        fontFamily: [
+            'Ubuntu',
+            'sans-serif',
+            'cursive',
+        ].join(','),
+    },
     custom: {
         popperColor: '#1B1B1B',
     },
