@@ -9,11 +9,11 @@ import {Box, Button, colors, Typography} from "@mui/material";
 import {DatePicker} from "@mui/x-date-pickers/DatePicker";
 import {popperSxProps} from "../styles/popperSxProps";
 import {CustomActionBar} from "../components/CustomActionBar";
-import {DatePickerToolbar} from "@mui/x-date-pickers/DatePicker/DatePickerToolbar";
-import {BaseToolbarProps} from "@mui/x-date-pickers/internals";
 import {useState} from "react";
 import {StyledDateTextField} from "../components/StyledDateTextField";
 import {CustomToolbar} from "../components/CustomToolbar";
+import {isMobile} from 'react-device-detect';
+import {CustomMobileDatePicker} from "../components/CustomMobileDatePicker";
 
 export default function TheCalendar() {
     const [value, setValue] = React.useState<Date | null>(new Date());
@@ -24,57 +24,59 @@ export default function TheCalendar() {
     };
 
     return (
-        // <>
         <LocalizationProvider dateAdapter={AdapterDayjs}>
             <Box>
-                <DatePicker
-                    open={open}
-                    onOpen={() => setOpen(true)}
-                    onClose={() => setOpen(false)}
+                {isMobile ?
+                    <CustomMobileDatePicker/>
+                    :
+                    <DatePicker
+                        open={open}
+                        onOpen={() => setOpen(true)}
+                        onClose={() => setOpen(false)}
 
-                    ToolbarComponent={CustomToolbar}
-                    toolbarFormat='MMM, YYYY'
-                    showToolbar={true}
-                    showDaysOutsideCurrentMonth={true}
-                    // * Su Mo Tu We Th Fr Sa
-                    dayOfWeekFormatter={(day) => `${day}`}
-                    label="Birthday"
-                    value={value}
-                    onChange={handleChange}
-                    closeOnSelect={false}
-                    components={{
-                        LeftArrowIcon: ChevronLeftIcon,
-                        OpenPickerIcon: CalendarMonthIcon,
-                        RightArrowIcon: ChevronRightIcon,
-                        ActionBar: CustomActionBar
-                    }}
-                    disableOpenPicker
-                    InputProps={{
-                    }}
-                    PaperProps={{
-                        sx: {
-                            "& .MuiPickersDay-root": {
-                                "&.Mui-selected": {
-                                    backgroundColor: 'primary.light',
+                        ToolbarComponent={CustomToolbar}
+                        toolbarFormat='MMM, YYYY'
+                        showToolbar={true}
+                        showDaysOutsideCurrentMonth={true}
+                        // * Su Mo Tu We Th Fr Sa
+                        dayOfWeekFormatter={(day) => `${day}`}
+                        label="Birthday"
+                        value={value}
+                        onChange={handleChange}
+                        closeOnSelect={false}
+                        components={{
+                            LeftArrowIcon: ChevronLeftIcon,
+                            OpenPickerIcon: CalendarMonthIcon,
+                            RightArrowIcon: ChevronRightIcon,
+                            ActionBar: CustomActionBar
+                        }}
+                        disableOpenPicker
+                        InputProps={{}}
+                        PaperProps={{
+                            sx: {
+                                "& .MuiPickersDay-root": {
+                                    "&.Mui-selected": {
+                                        backgroundColor: 'primary.light',
+                                    },
                                 },
-                            },
+                            }
+                        }}
+                        PopperProps={{sx: popperSxProps}}
+                        renderInput={(params) =>
+                            <StyledDateTextField
+                                {...params}
+                                sx={{
+                                    input: {color: colors.common.white},
+                                    label: {color: colors.common.white},
+                                }}
+                                onClick={(e: React.MouseEvent<HTMLDivElement>) => setOpen(true)}
+                                InputLabelProps={{shrink: true}}
+                            />
                         }
-                    }}
-                    PopperProps={{sx: popperSxProps}}
-                    renderInput={(params) =>
-                        <StyledDateTextField
-                            {...params}
-                            sx={{
-                                input: {color: colors.common.white},
-                                label: {color: colors.common.white},
-                            }}
-                            onClick={(e: React.MouseEvent<HTMLDivElement>) => setOpen(true)}
-                            InputLabelProps={{shrink:true}}
-                        />
-                    }
-                />
+                    />
+                }
+
             </Box>
         </LocalizationProvider>
-        // </>
     );
 }
