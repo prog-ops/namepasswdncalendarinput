@@ -18,9 +18,9 @@ export const PaperSxProps: SxProps = {
     display: "inline-flex",
     // mt: '24px'
   },
-  "& .MuiPickersArrowSwitcher-root:first-child": {
-    order: 0,
-  },
+  // "& .MuiPickersArrowSwitcher-root:first-child": {
+  //   order: 0,
+  // },
   // January 2023 between arrows
   // "& .css-dplwbx-MuiPickersCalendarHeader-label": {
   "& .MuiPickersCalendarHeader-label": {
@@ -32,14 +32,15 @@ export const PaperSxProps: SxProps = {
     fontSize: '12px'
   },
   "& .MuiPickersCalendarHeader-labelContainer": {
+    order: 0,
     color: colors.common.white,
   },
   "& .MuiPickersCalendarHeader-switchViewButton": {
     display: 'none',
   },
   "& .MuiPickersArrowSwitcher-spacer": {
-    width: "120px",
-    // width: "220px",
+    // width: "120px",
+    width: "220px",
     marginLeft: 0.5,
     marginRight: 0.5
   },
