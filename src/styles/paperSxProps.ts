@@ -26,23 +26,23 @@ export const PaperSxProps: SxProps = {
     display: "flex",
     // position: "fixed",
     //! this is uncommented to fit live hosting
-    // paddingLeft: "100px",
+    paddingLeft: "100px",
     fontSize: '14px',
     //! this is uncommented to fit live hosting
-    mb: '20px'
+    mb: '28px'
   },
   "& .MuiPickersCalendarHeader-labelContainer": {
-    order: 1,
+    // order: 1,
     color: colors.common.white,
     // position: "absolute",
   },
   "& .MuiPickersArrowSwitcher-root": {
     display: "inline-flex",
     position: "absolute",
-    // mt: '24px'
+    mt: '10px'
   },
   "& .MuiPickersCalendarHeader-switchViewButton": {
-    // display: 'none',
+    display: 'none',
   },
   "& .MuiPickersArrowSwitcher-spacer": {
     width: "220px",
@@ -52,8 +52,9 @@ export const PaperSxProps: SxProps = {
   "& .css-31ca4x-MuiPickersFadeTransitionGroup-root": {
     display: "flex",
     position: "absolute",
-    paddingLeft: "100px",
-    // mb: '24px'
+    // paddingLeft: "100px",
+    // mb: '24px',
+    mt: '10px',
   },
   // "& .css-9reuh9-MuiPickersArrowSwitcher-root": {
   //     marginLeft: "-2px"
