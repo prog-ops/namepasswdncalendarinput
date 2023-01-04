@@ -26,7 +26,7 @@ export const PaperSxProps: SxProps = {
     display: "flex",
     // position: "fixed",
     //! this is uncommented to fit live hosting
-    paddingLeft: "100px",
+    // paddingLeft: "100px",
     fontSize: '14px',
     //! this is uncommented to fit live hosting
     mb: '20px'
