@@ -32,15 +32,15 @@ export const PaperSxProps: SxProps = {
     fontSize: '12px'
   },
   "& .MuiPickersCalendarHeader-labelContainer": {
-    order: 0,
+    order: 1,
     color: colors.common.white,
   },
   "& .MuiPickersCalendarHeader-switchViewButton": {
     display: 'none',
   },
   "& .MuiPickersArrowSwitcher-spacer": {
-    // width: "120px",
-    width: "220px",
+    width: "120px",
+    // width: "220px",
     marginLeft: 0.5,
     marginRight: 0.5
   },
