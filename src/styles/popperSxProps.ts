@@ -38,43 +38,6 @@ export const popperSxProps: SxProps = {
 
 
     //- Header = December 2022, arrows
-    "& .MuiPickersCalendarHeader-root": {
-        display: "flex",
-        alignItems: "center",
-        justifyItems: "center",
-        justifyContent: 'space-evenly'
-    },
-    "& .MuiPickersCalendarHeader-root:first-child": {
-        order: 0,
-        paddingRight: "20px",
-        paddingLeft: "20px"
-    },
-    "& .MuiPickersArrowSwitcher-root": {
-        display: "inline-flex",
-    },
-    "& .MuiPickersCalendarHeader-label": {
-        textAlign: "center"
-    },
-    "& .MuiPickersCalendarHeader-labelContainer": {
-        color: colors.common.white,
-    },
-    "& .MuiPickersArrowSwitcher-spacer": {
-        width: "220px",
-        marginLeft: 0.5,
-        marginRight: 0.5
-    },
-    "& .css-31ca4x-MuiPickersFadeTransitionGroup-root": {
-        display: "flex",
-        position: "fixed",
-        paddingLeft: "80px"
-    },
-    "& .css-9reuh9-MuiPickersArrowSwitcher-root": {
-        marginLeft: "-2px"
-    },
-    "& .MuiPickersArrowSwitcher-button": {
-        paddingRight: "7px",
-        color: colors.common.white
-    },
 
 
     //- bagian S M T W T F S
@@ -90,6 +53,11 @@ export const popperSxProps: SxProps = {
         border: '1.4px solid',
         borderColor: 'primary.light',
 
+    },
+    "& .MuiPickersDay-root": {
+        "&.Mui-selected": {
+            backgroundColor: 'primary.light',
+        },
     },
     "& .MuiPickersDay-dayWithMargin": {
         color: colors.common.white,

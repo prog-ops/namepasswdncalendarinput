@@ -14,6 +14,7 @@ import {StyledDateTextField} from "../components/StyledDateTextField";
 import {CustomToolbar} from "../components/CustomToolbar";
 import {isMobile} from 'react-device-detect';
 import {CustomMobileDatePicker} from "../components/CustomMobileDatePicker";
+import {PaperSxProps} from "../styles/paperSxProps";
 
 export default function TheCalendar() {
     const [value, setValue] = React.useState<Date | null>(new Date());
@@ -54,13 +55,14 @@ export default function TheCalendar() {
                         disableOpenPicker
                         InputProps={{}}
                         PaperProps={{
-                            sx: {
-                                "& .MuiPickersDay-root": {
-                                    "&.Mui-selected": {
-                                        backgroundColor: 'primary.light',
-                                    },
-                                },
-                            }
+                            // sx: {
+                            //     "& .MuiPickersDay-root": {
+                            //         "&.Mui-selected": {
+                            //             backgroundColor: 'primary.light',
+                            //         },
+                            //     },
+                            // }
+                            sx: PaperSxProps
                         }}
                         PopperProps={{sx: popperSxProps}}
                         renderInput={(params) =>
