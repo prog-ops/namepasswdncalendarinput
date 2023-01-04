@@ -39,7 +39,7 @@ export const PaperSxProps: SxProps = {
   // January 2023 between arrows
   "& .css-dplwbx-MuiPickersCalendarHeader-label": {
     textAlign: "center",
-    // background: 'green',
+    background: 'green',
     // display: "flex",
     // position: "fixed",
     paddingLeft: "100px",
