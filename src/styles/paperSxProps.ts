@@ -7,8 +7,8 @@ export const PaperSxProps: SxProps = {
     alignItems: "center",
     justifyItems: "center",
     justifyContent: 'space-evenly',
-    position: 'relative'
-    // mb: '18px'
+    position: 'relative',
+    mt: '20px'
   },
   // "& .MuiPickersCalendarHeader-root:first-child": {
   //   order: 0,
@@ -29,12 +29,13 @@ export const PaperSxProps: SxProps = {
     paddingLeft: "100px",
     fontSize: '14px',
     //! this is uncommented to fit live hosting
-    mb: '28px'
+    mb: '20px'
   },
   "& .MuiPickersCalendarHeader-labelContainer": {
     // order: 1,
     color: colors.common.white,
     // position: "absolute",
+    paddingLeft: "100px",
   },
   "& .MuiPickersArrowSwitcher-root": {
     display: "inline-flex",
