@@ -32,7 +32,7 @@ export const PaperSxProps: SxProps = {
   },
   "& .css-31ca4x-MuiPickersFadeTransitionGroup-root": {
     display: "flex",
-    // position: "fixed",
+    position: "fixed",
     paddingLeft: "100px",
     mb: '24px'
   },
