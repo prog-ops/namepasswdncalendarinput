@@ -15,11 +15,6 @@ export const PaperSxProps: SxProps = {
   //   paddingRight: "20px",
   //   paddingLeft: "20px"
   // },
-  "& .MuiPickersArrowSwitcher-root": {
-    display: "inline-flex",
-    position: "absolute",
-    // mt: '24px'
-  },
   // // "& .MuiPickersArrowSwitcher-root:first-child": {
   // //   order: 0,
   // // },
@@ -27,31 +22,36 @@ export const PaperSxProps: SxProps = {
   // "& .css-dplwbx-MuiPickersCalendarHeader-label": {
   "& .MuiPickersCalendarHeader-label": {
     textAlign: "center",
-    // background: 'green',
+    background: 'green',
     // display: "flex",
     // position: "fixed",
     // paddingLeft: "100px",
-    // fontSize: '12px'
+    fontSize: '14px',
+    // justifySelf: 'center',
   },
   "& .MuiPickersCalendarHeader-labelContainer": {
     order: 1,
     color: colors.common.white,
-      position: "absolute",
+  },
+  "& .MuiPickersArrowSwitcher-root": {
+    display: "inline-flex",
+    position: "absolute",
+    // mt: '24px'
   },
   "& .MuiPickersCalendarHeader-switchViewButton": {
-    display: 'none',
+    // display: 'none',
   },
   "& .MuiPickersArrowSwitcher-spacer": {
     width: "220px",
     marginLeft: 0.5,
     marginRight: 0.5
   },
-  // "& .css-31ca4x-MuiPickersFadeTransitionGroup-root": {
-  //   display: "flex",
-  //   position: "absolute",
-  //   // paddingLeft: "100px",
-  //   // mb: '24px'
-  // },
+  "& .css-31ca4x-MuiPickersFadeTransitionGroup-root": {
+    display: "flex",
+    position: "absolute",
+    paddingLeft: "100px",
+    // mb: '24px'
+  },
   // "& .css-9reuh9-MuiPickersArrowSwitcher-root": {
   //     marginLeft: "-2px"
   // },
