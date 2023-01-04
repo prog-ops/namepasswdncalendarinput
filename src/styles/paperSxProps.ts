@@ -22,12 +22,12 @@ export const PaperSxProps: SxProps = {
   // "& .css-dplwbx-MuiPickersCalendarHeader-label": {
   "& .MuiPickersCalendarHeader-label": {
     textAlign: "center",
-    background: 'green',
-    // display: "flex",
+    // background: 'green',
+    display: "flex",
     // position: "fixed",
     // paddingLeft: "100px",
     fontSize: '14px',
-    // justifySelf: 'center',
+    mb: '24px'
   },
   "& .MuiPickersCalendarHeader-labelContainer": {
     order: 1,
@@ -44,7 +44,7 @@ export const PaperSxProps: SxProps = {
   "& .MuiPickersArrowSwitcher-spacer": {
     width: "220px",
     marginLeft: 0.5,
-    marginRight: 0.5
+    marginRight: 0.5,
   },
   "& .css-31ca4x-MuiPickersFadeTransitionGroup-root": {
     display: "flex",
