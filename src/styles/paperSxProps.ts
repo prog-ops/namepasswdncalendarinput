@@ -18,6 +18,9 @@ export const PaperSxProps: SxProps = {
     display: "inline-flex",
     // mt: '24px'
   },
+  "& .MuiPickersArrowSwitcher-root:first-child": {
+    order: 0,
+  },
   // January 2023 between arrows
   // "& .css-dplwbx-MuiPickersCalendarHeader-label": {
   "& .MuiPickersCalendarHeader-label": {
