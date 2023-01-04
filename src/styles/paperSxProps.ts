@@ -32,7 +32,7 @@ export const PaperSxProps: SxProps = {
   },
   "& .css-31ca4x-MuiPickersFadeTransitionGroup-root": {
     display: "flex",
-    position: "fixed",
+    // position: "fixed",
     paddingLeft: "100px",
     mb: '24px'
   },
@@ -42,9 +42,8 @@ export const PaperSxProps: SxProps = {
     background: 'green',
     // display: "flex",
     position: "fixed",
-    // paddingLeft: "100px",
+    paddingLeft: "100px",
     fontSize: '12px'
-
   },
   // "& .css-9reuh9-MuiPickersArrowSwitcher-root": {
   //     marginLeft: "-2px"
