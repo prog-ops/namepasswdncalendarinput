@@ -15,13 +15,13 @@ export const PaperSxProps: SxProps = {
     paddingLeft: "20px"
   },
   // January 2023 between arrows
-  // "& .css-dplwbx-MuiPickersCalendarHeader-label": {
-  //   textAlign: "center",
-  //   // background: 'green',
-  //   // display: "flex",
-  //   position: "fixed",
-  //   paddingLeft: "100px",
-  // },
+  "& .css-dplwbx-MuiPickersCalendarHeader-label": {
+    textAlign: "center",
+    // background: 'green',
+    // display: "flex",
+    // position: "fixed",
+    // paddingLeft: "100px",
+  },
   "& .MuiPickersArrowSwitcher-root": {
     display: "inline-flex",
     // mt: '24px'
