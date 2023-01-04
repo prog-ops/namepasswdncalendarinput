@@ -19,7 +19,7 @@ export const PaperSxProps: SxProps = {
   "& .MuiPickersCalendarHeader-label": {
     textAlign: "center",
     // position: "fixed",
-    paddingLeft: "90px",
+    // paddingLeft: "90px",
   },
   "& .MuiPickersCalendarHeader-labelContainer": {
     color: colors.common.white,
@@ -33,7 +33,7 @@ export const PaperSxProps: SxProps = {
   "& .css-31ca4x-MuiPickersFadeTransitionGroup-root": {
     display: "flex",
     position: "fixed",
-    // paddingLeft: "80px"
+    paddingLeft: "100px"
   },
   // "& .css-9reuh9-MuiPickersArrowSwitcher-root": {
   //     marginLeft: "-2px"
