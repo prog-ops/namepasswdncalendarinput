@@ -88,12 +88,13 @@ export const popperSxProps: SxProps = {
         "& .Mui-selected": {
             bgcolor: 'primary.light',
         },
+        width: '100%'
     },
-    "& .Mui-selected .PrivatePickersYear-yearButton":{
-        borderRadius: '2px',
-        bgcolor: 'primary.light',
-        height: '28px'
-    },
+    // "& .Mui-selected .PrivatePickersYear-yearButton":{
+    //     borderRadius: '2px',
+    //     bgcolor: 'primary.light',
+    //     height: '28px'
+    // },
     "& .PrivatePickersYear-yearButton:hover":{
         color: colors.common.black,
         backgroundColor: colors.common.white,
