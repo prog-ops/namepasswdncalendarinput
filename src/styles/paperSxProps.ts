@@ -27,11 +27,11 @@ export const PaperSxProps: SxProps = {
   // "& .css-dplwbx-MuiPickersCalendarHeader-label": {
   "& .MuiPickersCalendarHeader-label": {
     textAlign: "center",
-    background: 'green',
+    // background: 'green',
     // display: "flex",
     // position: "fixed",
     // paddingLeft: "100px",
-    fontSize: '12px'
+    // fontSize: '12px'
   },
   "& .MuiPickersCalendarHeader-labelContainer": {
     order: 1,
