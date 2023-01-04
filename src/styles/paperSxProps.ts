@@ -56,10 +56,10 @@ export const PaperSxProps: SxProps = {
   //     marginLeft: "-2px"
   // },
   "& .MuiPickersArrowSwitcher-button": {
-    // paddingRight: "7px",
-    // color: colors.common.white
+    paddingRight: "15px",
+    color: colors.common.white
   },
   "& .MuiIconButton-edgeStart": {
-    ml: '-20px'
+    // ml: '5px'
   },
 }
