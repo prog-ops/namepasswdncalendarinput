@@ -48,7 +48,7 @@ export const PaperSxProps: SxProps = {
     display: "flex",
     position: "absolute",
     paddingLeft: "100px",
-    mb: '24px'
+    // mb: '24px'
   },
   "& .css-9reuh9-MuiPickersArrowSwitcher-root": {
       marginLeft: "-2px"
