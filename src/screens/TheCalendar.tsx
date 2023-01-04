@@ -41,7 +41,7 @@ export default function TheCalendar() {
                         showDaysOutsideCurrentMonth={true}
                         // * Su Mo Tu We Th Fr Sa
                         dayOfWeekFormatter={(day) => `${day}`}
-                        label="Label"
+                        label="Labelnow"
                         // label="Birthday"
                         value={value}
                         onChange={handleChange}
