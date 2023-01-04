@@ -25,7 +25,7 @@ export const PaperSxProps: SxProps = {
     background: 'green',
     // display: "flex",
     // position: "fixed",
-    // paddingLeft: "100px",
+    paddingLeft: "100px",
     fontSize: '12px'
   },
   "& .MuiPickersCalendarHeader-labelContainer": {
