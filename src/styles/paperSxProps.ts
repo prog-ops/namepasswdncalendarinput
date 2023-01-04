@@ -6,7 +6,7 @@ export const PaperSxProps: SxProps = {
     display: "flex",
     alignItems: "center",
     justifyItems: "center",
-    // justifyContent: 'space-evenly',
+    justifyContent: 'space-evenly',
     // mb: '18px'
   },
   "& .MuiPickersCalendarHeader-root:first-child": {
@@ -39,8 +39,8 @@ export const PaperSxProps: SxProps = {
     display: 'none',
   },
   "& .MuiPickersArrowSwitcher-spacer": {
-    width: "120px",
-    // width: "220px",
+    // width: "120px",
+    width: "220px",
     marginLeft: 0.5,
     marginRight: 0.5
   },
