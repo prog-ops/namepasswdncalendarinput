@@ -39,7 +39,7 @@ export const popperSxProps: SxProps = {
 
     //- Header = December 2022, arrows
     "& .MuiPickersCalendarHeader-root": {
-        display: "flex",
+        display: "inline",
         alignItems: "center",
         justifyItems: "center",
         justifyContent: 'space-evenly'
@@ -64,11 +64,11 @@ export const popperSxProps: SxProps = {
     "& .MuiPickersCalendarHeader-labelContainer": {
         color: colors.common.white,
     },
-    "& .css-31ca4x-MuiPickersFadeTransitionGroup-root": {
-        display: "flex",
-        position: "fixed",
+    "& .MuiPickersFadeTransitionGroup-root": {
+        // display: "flex",
+        // position: "fixed",
         // position: "absolute",
-        paddingLeft: "80px"
+        // paddingLeft: "80px"
     },
     // "& .css-9reuh9-MuiPickersArrowSwitcher-root": {
     //     marginLeft: "-2px"
