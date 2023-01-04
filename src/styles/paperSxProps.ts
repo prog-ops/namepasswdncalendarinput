@@ -41,8 +41,8 @@ export const PaperSxProps: SxProps = {
     textAlign: "center",
     background: 'green',
     // display: "flex",
-    // position: "fixed",
-    paddingLeft: "100px",
+    position: "fixed",
+    // paddingLeft: "100px",
     fontSize: '12px'
   },
   // "& .css-9reuh9-MuiPickersArrowSwitcher-root": {
