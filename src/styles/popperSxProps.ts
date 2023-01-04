@@ -51,6 +51,12 @@ export const popperSxProps: SxProps = {
     },
     "& .MuiPickersArrowSwitcher-root": {
         display: "inline-flex",
+        marginLeft: "-2px"
+    },
+    "& .MuiPickersArrowSwitcher-spacer": {
+        width: "220px",
+        marginLeft: 0.5,
+        marginRight: 0.5
     },
     "& .MuiPickersCalendarHeader-label": {
         textAlign: "center"
@@ -58,20 +64,15 @@ export const popperSxProps: SxProps = {
     "& .MuiPickersCalendarHeader-labelContainer": {
         color: colors.common.white,
     },
-    "& .MuiPickersArrowSwitcher-spacer": {
-        width: "220px",
-        marginLeft: 0.5,
-        marginRight: 0.5
-    },
     "& .css-31ca4x-MuiPickersFadeTransitionGroup-root": {
         display: "flex",
         position: "fixed",
         // position: "absolute",
         paddingLeft: "80px"
     },
-    "& .css-9reuh9-MuiPickersArrowSwitcher-root": {
-        marginLeft: "-2px"
-    },
+    // "& .css-9reuh9-MuiPickersArrowSwitcher-root": {
+    //     marginLeft: "-2px"
+    // },
     "& .MuiPickersArrowSwitcher-button": {
         paddingRight: "7px",
         color: colors.common.white
