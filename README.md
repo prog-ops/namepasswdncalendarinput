@@ -4,6 +4,7 @@ Note: yearpckr doesn't appear as locally after hosted on github pages
 
 Visit:
 https://prog-ops.github.io/namepasswdncalendarinput/
+or
 https://reliable-travesseiro-800bb4.netlify.app/
 
 ## 1
