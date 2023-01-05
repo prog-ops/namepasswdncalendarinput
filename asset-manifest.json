@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/namepasswdncalendarinput/static/css/main.34dcf8bc.css",
+    "main.js": "/namepasswdncalendarinput/static/js/main.6279b9a3.js",
+    "static/js/787.51f81fdc.chunk.js": "/namepasswdncalendarinput/static/js/787.51f81fdc.chunk.js",
+    "index.html": "/namepasswdncalendarinput/index.html",
+    "main.34dcf8bc.css.map": "/namepasswdncalendarinput/static/css/main.34dcf8bc.css.map",
+    "main.6279b9a3.js.map": "/namepasswdncalendarinput/static/js/main.6279b9a3.js.map",
+    "787.51f81fdc.chunk.js.map": "/namepasswdncalendarinput/static/js/787.51f81fdc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34dcf8bc.css",
+    "static/js/main.6279b9a3.js"
+  ]
+}
